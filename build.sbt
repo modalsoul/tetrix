@@ -8,7 +8,7 @@ lazy val buildSettings = Seq(
 )
 
 lazy val swingDependencies = Def.setting {
-	"org.scala-lang" % "scala-lang" % scalaVersion.value
+	"org.scala-lang" % "scala-swing" % scalaVersion.value
 }
 
 lazy val root = (project in file(".")).

@@ -1,7 +1,8 @@
 package jp.modal.soul.tetrix.swing
 
-improt swing._
+import swing._
 import event._
+import jp.modal.soul.tetrix._ 
 
 object Main extends SimpleSwingApplication {
 	import event.Key._
@@ -11,12 +12,20 @@ object Main extends SimpleSwingApplication {
 	val bluishGray = new AWTColor(48, 99, 99)
 	val bluishSilver = new AWTColor(210, 255, 255)
 
+	val ui = new AbstractUI
+
 	def onKeyPress(keyCode: Value) = keyCode match {
+		case Left => ui.left()
+		case Right => ui.right()
+		case Up => ui.up()
+		case Down => ui.down()
+		case Space => ui.space()
 		case _ => 
 	}
 
 	def onPaint(g:Graphics2D) {
-
+		g setColor bluishSilver
+		g drawString (ui.last, 20, 20)
 	}
 
 	def top = new MainFrame {
@@ -39,4 +48,6 @@ object Main extends SimpleSwingApplication {
 			onPaint(g)
 		}
 	}
+
+
 }
