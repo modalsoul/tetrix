@@ -6,24 +6,16 @@ class Stage(size: (Int, Int)) {
 	var blocks = Block((0,0), TKind) +: currentPiece.current
 	def view: GameView = GameView(blocks, size, currentPiece.current)
 
-	def moveLeft() = moveBy(-1.0, 0.0)
-	def moveRight() = moveBy(1.0, 0.0)
-	private[this] def moveBy(delta:(Double, Double)):this.type = {
-		validate(currentPiece.moveBy(delta), unload(currentPiece, blocks)) map { case (moved, unloaded) =>
-			blocks = load(moved, unloaded)
-			currentPiece = moved
-		}
-		this	
-	}
-	def rotateCW() = rotateBy(-math.Pi/2.0)
-	private[this] def rotateBy(theta:Double):this.type = {
-		validate(currentPiece.rotateBy(theta), unload(currentPiece, blocks)) map { case (moved, unloaded) => 
+	def moveLeft() = transformPiece(_.moveBy(-1.0,0.0))
+	def moveRight() = transformPiece(_.moveBy(1.0, 0.0))
+	def rotateCW() = transformPiece(_.rotateBy(-math.Pi/2.0))
+	private[this] def transformPiece(trans:Piece => Piece):this.type = {
+		validate(trans(currentPiece), unload(currentPiece, blocks)) map { case (moved, unloaded) => 
 			blocks = load(moved, unloaded)
 			currentPiece = moved
 		}
 		this
 	}
-
 
 	private[this] def validate(p:Piece, bs:Seq[Block]):Option[(Piece, Seq[Block])] = 
 		if(p.current map {_.pos} forall inBounds) Some(p, bs)
