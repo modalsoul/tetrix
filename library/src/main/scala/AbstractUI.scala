@@ -7,13 +7,14 @@ class AbstractUI {
 		stage.moveLeft()
 	}
 	def right() {
-		stage.moveRight();
+		stage.moveRight()
 	}
 	def up() = {
 	}
 	def down() = {
 	}
 	def space() = {
+		stage.rotateCW()
 	}
 
 	def view:GameView = stage.view

@@ -3,7 +3,7 @@ package jp.modal.soul.tetrix
 class Stage(size: (Int, Int)) {
 	private[this] def dropOffPos = (size._1 /2.0, size._2 -3.0)
 	private[this] var currentPiece = Piece(dropOffPos, TKind)
-	private[this] var blocks = Block((0,0), TKind) +: currentPiece.current
+	var blocks = Block((0,0), TKind) +: currentPiece.current
 	def view: GameView = GameView(blocks, size, currentPiece.current)
 
 	def moveLeft() = moveBy(-1.0, 0.0)
@@ -13,9 +13,18 @@ class Stage(size: (Int, Int)) {
 			blocks = load(moved, unloaded)
 			currentPiece = moved
 		}
-		this
-		
+		this	
 	}
+	def rotateCW() = rotateBy(-math.Pi/2.0)
+	private[this] def rotateBy(theta:Double):this.type = {
+		validate(currentPiece.rotateBy(theta), unload(currentPiece, blocks)) map { case (moved, unloaded) => 
+			blocks = load(moved, unloaded)
+			currentPiece = moved
+		}
+		this
+	}
+
+
 	private[this] def validate(p:Piece, bs:Seq[Block]):Option[(Piece, Seq[Block])] = 
 		if(p.current map {_.pos} forall inBounds) Some(p, bs)
 		else None
@@ -27,6 +36,6 @@ class Stage(size: (Int, Int)) {
 		val currentPoss = p.current map {_.pos}
 		bs filterNot { currentPoss contains _.pos}
 	}
-	
+
 	private[this] def load(p:Piece, bs:Seq[Block]):Seq[Block] = bs ++ p.current
 }
