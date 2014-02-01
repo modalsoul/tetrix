@@ -1,0 +1,13 @@
+<StageSpec-stats timestamp="1391226503309"><stats time="3"></stats></StageSpec-stats>
+<StageSpec-stats timestamp="1391226607414"><stats time="3"><trend><stats time="3" expectations="-1"></stats></trend></stats></StageSpec-stats>
+<StageSpec-stats timestamp="1391227062114"><stats time="27" expectations="2" successes="2" examples="2"><trend><stats time="27" expectations="1" successes="2" examples="2"></stats></trend></stats></StageSpec-stats>
+<StageSpec-stats timestamp="1391227123528"><stats time="39" expectations="4" successes="4" examples="4"><trend><stats time="39" expectations="2" successes="2" examples="2"></stats></trend></stats></StageSpec-stats>
+<StageSpec-stats timestamp="1391227219366"><stats time="64" expectations="2" successes="2" examples="2"><trend><stats time="64" expectations="-2" successes="-2" examples="-2"></stats></trend></stats></StageSpec-stats>
+<StageSpec-stats timestamp="1391227268212"><stats time="30" expectations="2" successes="2" examples="2"></stats></StageSpec-stats>
+<StageSpec-stats timestamp="1391227323546"><stats time="38" expectations="4" successes="4" examples="4"><trend><stats time="38" expectations="2" successes="2" examples="2"></stats></trend></stats></StageSpec-stats>
+<StageSpec-results timestamp="1391227873221"><result location="scala.collection.LinearSeqOptimized (LinearSeqOptimized.scala:111)" id="-504686131"><stats time="10" expectations="1" failures="1" examples="1"></stats></result>
+</StageSpec-results>
+<StageSpec-stats timestamp="1391227873276"><stats time="24" expectations="4" failures="1" successes="3" examples="4"><trend><stats time="24" failures="1" successes="-1"></stats></trend></stats></StageSpec-stats>
+<StageSpec-results timestamp="1391228030235"><result location="scala.collection.LinearSeqOptimized (LinearSeqOptimized.scala:111)" id="-504686131"><stats time="18" expectations="1" failures="1" examples="1"></stats></result>
+</StageSpec-results>
+<StageSpec-stats timestamp="1391228030278"><stats time="24" expectations="4" failures="1" successes="3" examples="4"></stats></StageSpec-stats>

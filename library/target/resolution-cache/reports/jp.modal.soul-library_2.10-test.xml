@@ -7,17 +7,89 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20140201005133"/>
+		date="20140201122521"/>
 	<dependencies>
+		<module organisation="org.specs2" name="specs2_2.10">
+			<revision name="2.2.2" status="release" pubdate="20130918221611" resolver="public" artresolver="public" homepage="http://specs2.org/" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="MIT-style" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="3879" time="743" location="/Users/imaemasatoshi/.ivy2/cache/org.specs2/specs2_2.10/ivy-2.2.2.xml" searched="true" original-local-location="/Users/imaemasatoshi/.ivy2/cache/org.specs2/specs2_2.10/ivy-2.2.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/specs2/specs2_2.10/2.2.2/specs2_2.10-2.2.2.pom"/>
+				<caller organisation="jp.modal.soul" name="library_2.10" conf="test, compile, runtime" rev="2.2.2" rev-constraint-default="2.2.2" rev-constraint-dynamic="2.2.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="specs2_2.10" type="jar" ext="jar" status="successful" details="" size="8012077" time="4933" location="/Users/imaemasatoshi/.ivy2/cache/org.specs2/specs2_2.10/jars/specs2_2.10-2.2.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/specs2/specs2_2.10/2.2.2/specs2_2.10-2.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-concurrent_2.10">
+			<revision name="7.0.2" status="release" pubdate="20130707213200" resolver="public" artresolver="public" homepage="http://scalaz.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="3">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="3208" time="701" location="/Users/imaemasatoshi/.ivy2/cache/org.scalaz/scalaz-concurrent_2.10/ivy-7.0.2.xml" searched="true" original-local-location="/Users/imaemasatoshi/.ivy2/cache/org.scalaz/scalaz-concurrent_2.10/ivy-7.0.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalaz/scalaz-concurrent_2.10/7.0.2/scalaz-concurrent_2.10-7.0.2.pom"/>
+				<caller organisation="org.specs2" name="specs2_2.10" conf="default, compile, runtime, master" rev="7.0.2" rev-constraint-default="7.0.2" rev-constraint-dynamic="7.0.2" callerrev="2.2.2"/>
+				<artifacts>
+					<artifact name="scalaz-concurrent_2.10" type="bundle" ext="jar" status="successful" details="" size="286811" time="1235" location="/Users/imaemasatoshi/.ivy2/cache/org.scalaz/scalaz-concurrent_2.10/bundles/scalaz-concurrent_2.10-7.0.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalaz/scalaz-concurrent_2.10/7.0.2/scalaz-concurrent_2.10-7.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-effect_2.10">
+			<revision name="7.0.2" status="release" pubdate="20130707213131" resolver="public" artresolver="public" homepage="http://scalaz.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="4">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="3018" time="727" location="/Users/imaemasatoshi/.ivy2/cache/org.scalaz/scalaz-effect_2.10/ivy-7.0.2.xml" searched="true" original-local-location="/Users/imaemasatoshi/.ivy2/cache/org.scalaz/scalaz-effect_2.10/ivy-7.0.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.0.2/scalaz-effect_2.10-7.0.2.pom"/>
+				<caller organisation="org.scalaz" name="scalaz-concurrent_2.10" conf="compile, runtime" rev="7.0.2" rev-constraint-default="7.0.2" rev-constraint-dynamic="7.0.2" callerrev="7.0.2"/>
+				<artifacts>
+					<artifact name="scalaz-effect_2.10" type="bundle" ext="jar" status="successful" details="" size="429615" time="1372" location="/Users/imaemasatoshi/.ivy2/cache/org.scalaz/scalaz-effect_2.10/bundles/scalaz-effect_2.10-7.0.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.10/7.0.2/scalaz-effect_2.10-7.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-core_2.10">
+			<revision name="7.0.2" status="release" pubdate="20130707213202" resolver="public" artresolver="public" homepage="http://scalaz.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="2">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="2836" time="678" location="/Users/imaemasatoshi/.ivy2/cache/org.scalaz/scalaz-core_2.10/ivy-7.0.2.xml" searched="true" original-local-location="/Users/imaemasatoshi/.ivy2/cache/org.scalaz/scalaz-core_2.10/ivy-7.0.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.2/scalaz-core_2.10-7.0.2.pom"/>
+				<caller organisation="org.specs2" name="specs2_2.10" conf="default, compile, runtime, master" rev="7.0.2" rev-constraint-default="7.0.2" rev-constraint-dynamic="7.0.2" callerrev="2.2.2"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="compile, runtime" rev="7.0.2" rev-constraint-default="7.0.2" rev-constraint-dynamic="7.0.2" callerrev="7.0.2"/>
+				<caller organisation="org.scalaz" name="scalaz-concurrent_2.10" conf="compile, runtime" rev="7.0.2" rev-constraint-default="7.0.2" rev-constraint-dynamic="7.0.2" callerrev="7.0.2"/>
+				<artifacts>
+					<artifact name="scalaz-core_2.10" type="bundle" ext="jar" status="successful" details="" size="8596592" time="4112" location="/Users/imaemasatoshi/.ivy2/cache/org.scalaz/scalaz-core_2.10/bundles/scalaz-core_2.10-7.0.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.2/scalaz-core_2.10-7.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.10.3" status="release" pubdate="20130927184454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">
+			<revision name="2.10.3" status="release" pubdate="20130927184454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master, master(*), compile(*), runtime(*)" position="0">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
 				<metadata-artifact status="no" details="" size="2585" time="0" location="/Users/imaemasatoshi/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.pom"/>
+				<caller organisation="org.specs2" name="specs2_2.10" conf="default, compile, runtime, master" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.2.2"/>
 				<caller organisation="jp.modal.soul" name="library_2.10" conf="test, compile, runtime" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="0.1.0-SNAPSHOT"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.2"/>
+				<caller organisation="org.scalaz" name="scalaz-concurrent_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.2"/>
+				<caller organisation="org.scalaz" name="scalaz-core_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.2"/>
 				<artifacts>
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126003" time="0" location="/Users/imaemasatoshi/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.10.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master, default(compile), default" position="-1">
+				<evicted-by rev="2.10.3"/>
+				<caller organisation="org.specs2" name="specs2_2.10" conf="default, compile, runtime, master" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.2.2"/>
+				<caller organisation="jp.modal.soul" name="library_2.10" conf="test, compile, runtime" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="0.1.0-SNAPSHOT"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.2"/>
+				<caller organisation="org.scalaz" name="scalaz-concurrent_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.2"/>
+				<caller organisation="org.scalaz" name="scalaz-core_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.10.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master, default(compile), default" position="-1">
+				<evicted-by rev="2.10.3"/>
+				<caller organisation="org.specs2" name="specs2_2.10" conf="default, compile, runtime, master" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.2.2"/>
+				<caller organisation="jp.modal.soul" name="library_2.10" conf="test, compile, runtime" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="0.1.0-SNAPSHOT"/>
+				<caller organisation="org.scalaz" name="scalaz-core_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="7.0.2"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>

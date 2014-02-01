@@ -16,7 +16,8 @@ lazy val root = (project in file(".")).
 	settings(name := "tetrix.scala")
 
 lazy val library = (project in file("library")).
-	settings(buildSettings: _*)
+	settings(buildSettings: _*).
+	settings(libraryDependencies += libDeps.value)
 
 lazy val swing = (project in file("swing")).
 	settings(buildSettings: _*).
@@ -25,3 +26,8 @@ lazy val swing = (project in file("swing")).
 		libraryDependencies += swingDependencies.value
 	).
 	dependsOn(library)
+
+lazy val specs2Version = "2.2.2"
+lazy val libDeps = Def.setting {
+	"org.specs2" %% "specs2" % specs2Version % "test"
+}

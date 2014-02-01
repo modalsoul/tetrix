@@ -4,7 +4,7 @@
 		module="swing_2.10"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20140201005444"
+		publication="20140201122539"
 	>
 		<license name="MIT License" url="http://opensource.org/licenses/mit-license.php/" />
 		<description>
