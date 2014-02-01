@@ -9,10 +9,8 @@
 [0m[[0minfo[0m] [0m[37m                                                                              [0m[0m
 [0m[[0minfo[0m] [0m[37m  Moving to the left the current piece should[0m[0m
 [0m[[0minfo[0m] [0m[37m    [0m[32m+[0m change the blocks in the view[37m[0m[0m
-[0m[[0minfo[0m] [0m[37m    [0m[37m[33mx[0m as long as it doesn't hit the wall.[0m[0m
-[0m[[31merror[0m] [0m List((0,0), (-1,17), (0,17), (1,17), (0,18)) does not contain (2,17), (1,18) and must not contain '(-1,17)' is equal to '(0,17)', '(0,18)' is equal to '(2,17)' in order (StageSpec.scala:23)[0m
-[0m[[0minfo[0m] [0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m    [0m[32m+[0m as long as it doesn't hit the wall.[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m                                                                              [0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification StageSpec[0m
-[0m[[0minfo[0m] [0m[34mFinished in 24 ms[0m[0m
-[0m[[0minfo[0m] [0m[34m[0m[34m4 examples, 1 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[34mFinished in 37 ms[0m[0m
+[0m[[0minfo[0m] [0m[34m[0m[34m4 examples, 0 failure, 0 error[0m[0m
