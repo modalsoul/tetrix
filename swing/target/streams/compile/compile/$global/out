@@ -2,14 +2,37 @@
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
 [0m[[0mdebug[0m] [0m	added: Set()[0m
-[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set(/Users/imaemasatoshi/workspace/scala_work/tetrix/swing/src/main/scala/Main.scala)[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
-[0m[[0mdebug[0m] [0mModified external sources: Set()[0m
+[0m[[0mdebug[0m] [0mModified external sources: Set(jp.modal.soul.tetrix.GameView, jp.modal.soul.tetrix.Block, jp.modal.soul.tetrix.AbstractUI)[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/imaemasatoshi/workspace/scala_work/tetrix/swing/src/main/scala/Main.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
-[0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set(/Users/imaemasatoshi/workspace/scala_work/tetrix/swing/src/main/scala/Main.scala)[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/imaemasatoshi/workspace/scala_work/tetrix/swing/src/main/scala/Main.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/imaemasatoshi/workspace/scala_work/tetrix/swing/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 2e6ed964, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-deprecation[0m
+[0m[[0mdebug[0m] [0m	-unchecked[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/Users/imaemasatoshi/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/imaemasatoshi/workspace/scala_work/tetrix/swing/target/scala-2.10/classes:/Users/imaemasatoshi/workspace/scala_work/tetrix/library/target/scala-2.10/classes:/Users/imaemasatoshi/.ivy2/cache/org.scala-lang/scala-swing/jars/scala-swing-2.10.3.jar[0m
+[0m[[33mwarn[0m] [0m/Users/imaemasatoshi/workspace/scala_work/tetrix/swing/src/main/scala/Main.scala:45: val keyword in for comprehension is deprecated[0m
+[0m[[33mwarn[0m] [0m				val pos = (x, y)[0m
+[0m[[33mwarn[0m] [0m				        ^[0m
+[0m[[33mwarn[0m] [0mone warning found[0m
+[0m[[0mdebug[0m] [0mScala compilation took 8.901693 s[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/Users/imaemasatoshi/workspace/scala_work/tetrix/swing/src/main/scala/Main.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m

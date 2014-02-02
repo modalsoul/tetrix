@@ -8,6 +8,7 @@ object Main extends SimpleSwingApplication {
 	import event.Key._
 	import java.awt.{Dimension, Graphics2D, Graphics, Image, Rectangle}
 	import java.awt.{Color => AWTColor}
+	import javax.swing.{Timer => SwingTimer, AbstractAction}
 
 	val bluishGray = new AWTColor(48, 99, 99)
 	val bluishLigherGray = new AWTColor(79, 130, 130)
@@ -32,7 +33,9 @@ object Main extends SimpleSwingApplication {
 		val view = ui.view
 
 		def buildRect(pos:(Int, Int)): Rectangle =
-			new Rectangle(pos._1 * (blockSize + blockMargin), (view.gridSize._2 - pos._2 -1) * (blockSize + blockMargin), blockSize, blockSize)
+			new Rectangle(pos._1 * (blockSize + blockMargin), 
+				(view.gridSize._2 - pos._2 -1) * (blockSize + blockMargin), 
+				blockSize, blockSize)
 
 		def drawEmptyGrid {
 			g setColor bluishLigherGray
@@ -76,6 +79,10 @@ object Main extends SimpleSwingApplication {
 			g fillRect (0, 0, size.width, size.height)
 			onPaint(g)
 		}
+		val timer = new SwingTimer(100, new AbstractAction() {
+			def actionPerformed(e:java.awt.event.ActionEvent){ repaint }
+			})
+		timer.start
 	}
 
 

@@ -2,18 +2,22 @@
 [0m[[0minfo[0m] [0m[37m  This is a specification to check Stage[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m  Moving to the left the current piece should[0m[0m
-[0m[[0minfo[0m] [0m[37m    [0m[32m+[0m change the blocks in the view.[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m    [0m[32m+[0m change the blocks in the view[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m    [0m[32m+[0m as long as it doesn't hit the wall.[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m  Moving to the right the current piece should[0m[0m
 [0m[[0minfo[0m] [0m[37m    [0m[32m+[0m change the blocks in the view.[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m                                                                              [0m[0m
-[0m[[0minfo[0m] [0m[37m  Moving to the left the current piece should[0m[0m
-[0m[[0minfo[0m] [0m[37m    [0m[32m+[0m change the blocks in the view[37m[0m[0m
-[0m[[0minfo[0m] [0m[37m    [0m[32m+[0m as long as it doesn't hit the wall.[37m[0m[0m
-[0m[[0minfo[0m] [0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m  Rotating the current piece should[0m[0m
 [0m[[0minfo[0m] [0m[37m  [0m[32m+[0m change the blocks in the view.[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  Ticking the current piece should[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m change the blocks in the vies,[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m or spawn a new piece when it hits something.[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m    [0m[37m[33mx[0m It should also clear out full rows.[0m[0m
+[0m[[31merror[0m] [0m List((0,0), (1,0), (2,0), (3,0), (7,0), (8,0), (9,0), (4,0), (5,0), (6,0), (5,1), (4,17), (5,17), (6,17), (5,18)) must not contain '(0,0)' is equal to '(5,0)', '(1,0)' is equal to '(5,0)', '(2,0)' is equal to '(5,0)', '(3,0)' is equal to '(5,0)', '(7,0)' is equal to '(5,0)', '(8,0)' is equal to '(5,0)', '(9,0)' is equal to '(5,0)', '(4,0)' is equal to '(5,0)', '(6,0)' is equal to '(4,17)', '(5,1)' is equal to '(4,17)' in order (StageSpec.scala:55)[0m
+[0m[[0minfo[0m] [0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m                                                                              [0m[37m[0m[0m
 [0m[[0minfo[0m] [0m[37m[0mTotal for specification StageSpec[0m
 [0m[[0minfo[0m] [0m[34mFinished in 29 ms[0m[0m
-[0m[[0minfo[0m] [0m[34m[0m[34m5 examples, 0 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[34m[0m[34m7 examples, 1 failure, 0 error[0m[0m
