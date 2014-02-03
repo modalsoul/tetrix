@@ -1,15 +1,40 @@
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
-[0m[[0mdebug[0m] [0m	added: Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/AbstractUI.scala, /Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/pieces.scala, /Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/Stage.scala)[0m
 [0m[[0mdebug[0m] [0m	modified: Set()[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mModified external sources: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/AbstractUI.scala, /Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/pieces.scala, /Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/Stage.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/AbstractUI.scala, /Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/pieces.scala, /Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/Stage.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 3 sources: invalidated sources (3) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 3 Scala sources to /Users/imaemasatoshi/workspace/scala_work/tetrix/library/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 62b21d14, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-deprecation[0m
+[0m[[0mdebug[0m] [0m	-unchecked[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/Users/imaemasatoshi/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/imaemasatoshi/workspace/scala_work/tetrix/library/target/scala-2.10/classes[0m
+[0m[[33mwarn[0m] [0m/Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/pieces.scala:38: match may not be exhaustive.[0m
+[0m[[33mwarn[0m] [0mIt would fail on the following inputs: IKind, JKind, LKind, OKind, SKind, ZKind[0m
+[0m[[33mwarn[0m] [0m		kind match {[0m
+[0m[[33mwarn[0m] [0m		^[0m
+[0m[[33mwarn[0m] [0mthere were 1 feature warning(s); re-run with -feature for details[0m
+[0m[[33mwarn[0m] [0mtwo warnings found[0m
+[0m[[0mdebug[0m] [0mScala compilation took 15.393206 s[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/AbstractUI.scala, /Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/Stage.scala, /Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/pieces.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/AbstractUI.scala, /Users/imaemasatoshi/workspace/scala_work/tetrix/library/src/main/scala/Stage.scala)[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m

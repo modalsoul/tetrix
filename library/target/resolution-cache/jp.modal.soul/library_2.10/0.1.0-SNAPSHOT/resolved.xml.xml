@@ -4,7 +4,7 @@
 		module="library_2.10"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20140201122521"
+		publication="20140203235912"
 	>
 		<license name="MIT License" url="http://opensource.org/licenses/mit-license.php/" />
 		<description>
